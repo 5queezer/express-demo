@@ -30,12 +30,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/courses",
+					"raw": "http://localhost:{{PORT}}/api/courses",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "{{PORT}}",
 					"path": [
 						"api",
 						"courses"
@@ -66,12 +66,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/course",
+					"raw": "http://localhost:{{PORT}}/api/course",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "{{PORT}}",
 					"path": [
 						"api",
 						"course"
@@ -105,12 +105,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/course/1",
+					"raw": "http://localhost:{{PORT}}/api/course/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "{{PORT}}",
 					"path": [
 						"api",
 						"course",
@@ -142,16 +142,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/course/4",
+					"raw": "http://localhost:{{PORT}}/api/course/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "{{PORT}}",
 					"path": [
 						"api",
 						"course",
-						"4"
+						"5"
 					]
 				}
 			},
@@ -179,12 +179,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/api/course/4",
+					"raw": "http://localhost:{{PORT}}/api/course/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "4000",
+					"port": "{{PORT}}",
 					"path": [
 						"api",
 						"course",
@@ -193,6 +193,36 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e6455d84-3409-4cd0-b076-d1f508a5aed8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1777984c-15c9-4adb-9a7e-ddba4c916dae",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "2e9ac7f7-70fe-4e58-ad99-dc64fdbc9af9",
+			"key": "PORT",
+			"value": "3000",
+			"type": "string"
 		}
 	],
 	"protocolProfileBehavior": {}
