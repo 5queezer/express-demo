@@ -8,7 +8,7 @@ const logger = require('./logger');
 const express = require('express');
 const app = express();
 
-app.set('view engine', 'pug');
+app.set('view engine', 'pug'); // engines: pug,mustache,ejs
 app.set('views', './views');
 
 app.use(express.json());
