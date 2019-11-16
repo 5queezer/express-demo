@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const logger = require('./middleware/logger');
 const courses = require('./routes/courses')
 const home = require('./routes/home')
+const genres = require('./routes/genres')
 const express = require('express');
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(express.static('public'));
 app.use(helmet());
 app.use('/api/courses', courses);
 app.use('/', home);
+app.use('/api/genres', genres);
 
 // Configuration
 console.log('Application Name: ' + config.get('name'));
